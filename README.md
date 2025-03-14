@@ -2,7 +2,7 @@
 
 Submitted by: **Md Rafi**
 
-This web app: **insert description**
+This web app: **This web app: Guess the Prophet is an interactive flashcard web app designed to help users learn about various prophets in Islamic tradition.**
 
 Time spent: **4** hours spent in total
 
