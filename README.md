@@ -1,6 +1,6 @@
-# Web Development Project 3 - *Name of App Here*
+# Web Development Project 3 - *Guess the Prophets*
 
-Submitted by: **Your Name Here**
+Submitted by: **Md Rafi**
 
 This web app: **insert description**
 
