@@ -1,0 +1,217 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #d7e1ec, #eef2f3);
+  background-image: url('background.jpg'); /* Add background image */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Container */
+.container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+  padding: 50px;
+  width: 500px;
+  border-radius: 25px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+  transform: scale(1.03);
+}
+
+/* Heading */
+h1 {
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Flashcard Container */
+.card-container {
+  perspective: 1000px;
+  width: 350px;
+  height: 200px;
+  margin: 20px auto;
+}
+
+/* Flip Card */
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease-in-out;
+  cursor: pointer;
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+}
+
+/* Front & Back of Card */
+.card .card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  padding: 3px;
+}
+
+.card .front {
+  background: linear-gradient(to right, #218838, #0056b3);
+  color: white;
+}
+
+.card .back {
+  background: linear-gradient(to right, #007bff, #218838);
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/* Buttons */
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Space between buttons */
+  margin-top: 15px;
+}
+
+button {
+  background: linear-gradient(to right, #245b30, #245b30);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background 0.3s, transform 0.2s;
+  width: 130px; /* Uniform button width */
+}
+
+button:hover {
+  background: linear-gradient(to right, #218838, #1e7e34);
+  transform: scale(1.05);
+}
+
+button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Guess Section */
+.guess-section {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.guess-section input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  width: 200px;
+}
+
+.guess-section button {
+  background: linear-gradient(to right, #245b30, #245b30);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.guess-section button:hover {
+  background: linear-gradient(to right, #218838, #1e7e34);
+  transform: scale(1.05);
+}
+
+/* Feedback */
+.feedback {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+}
+
+/* Guess Section */
+.input-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.input-container input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  width: 200px;
+}
+
+.input-container button {
+  background: linear-gradient(to right, #245b30, #245b30);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.input-container button:hover {
+  background: linear-gradient(to right, #218838, #1e7e34);
+  transform: scale(1.05);
+}
+
+/* Feedback */
+.feedback {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+}
+
+.correct {
+  color: green;
+}
+
+.incorrect {
+  color: red;
+}
+
+/* SHUFFLE BUTTON - Different Color */
+.shuffle-button {
+  background: linear-gradient(to right, #13424e, #13424e); /* Red gradient */
+}
+
+.shuffle-button:hover {
+  background: linear-gradient(to right, #218838, #218838); /* Darker red on hover */
+  transform: scale(1.05);
+}
